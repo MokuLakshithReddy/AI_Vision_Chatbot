@@ -75,3 +75,9 @@ The app will open automatically at [http://localhost:8501](http://localhost:8501
 3. Click **New app**, select your repository, branch, and set `app.py` as the entrypoint.
 4. Under **Advanced settings → Secrets**, paste the contents of your `.streamlit/secrets.toml`.
 5. Click **Deploy**!
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
