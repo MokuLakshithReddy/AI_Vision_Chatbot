@@ -6,6 +6,33 @@ Users enter their name and WhatsApp number once, then chat with MacroSnap by typ
 
 ---
 
+## How a meal analysis request flows
+
+~~~mermaid
+flowchart TD
+    A["User enters a question or meal photo"] --> B["Streamlit app"]
+    B --> C["Gemini chat / vision request"]
+    C --> D["Nutrition estimate and explanation"]
+    D --> E["Daily summary assembled"]
+    E --> F["Twilio WhatsApp message"]
+~~~
+
+### What the repository demonstrates
+
+- Text chat and meal-photo upload through a Streamlit interface.
+- Gemini used for chat and vision-based meal interpretation.
+- Twilio WhatsApp integration for sending a formatted daily summary.
+- Local launch scripts for Windows and a Streamlit Community Cloud deployment path.
+
+### Evidence and safety scope
+
+The calorie and macronutrient values are **AI-generated estimates**, not laboratory measurements or medical nutrition advice. Photo-based estimates depend on portion visibility, ingredients, preparation method, and model behavior. No labelled meal-image evaluation set, nutrition-accuracy benchmark, or clinical validation is published in this repository.
+
+Keep credentials in Streamlit secrets or deployment-managed secret storage; never commit the real secrets file. The existing setup guide uses .streamlit/secrets.toml.example as the template.
+
+**Why it matters:** turns an informal meal photo or text description into a structured nutrition estimate and makes a daily recap easy to share through a messaging channel.
+
+---
 ## 📁 Project Structure
 
 ```
