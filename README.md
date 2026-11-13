@@ -6,6 +6,29 @@ Users enter their name and WhatsApp number once, then chat with MacroSnap by typ
 
 ---
 
+## At a glance
+
+![GitHub stars](https://img.shields.io/github/stars/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square&label=stars)
+![Last commit](https://img.shields.io/github/last-commit/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square)
+
+**Why it matters:** Meal logging is easier when people can describe a meal naturally or share a photo instead of manually entering every ingredient. MacroSnap explores a chat-first flow that can turn an image or question into an estimated nutrition summary and deliver that summary through WhatsApp.
+
+## User flow
+
+```mermaid
+flowchart TD
+    U["User opens Streamlit app"] --> I["Enter profile and WhatsApp details"]
+    I --> Q["Ask a nutrition question or upload meal photo"]
+    Q --> G["Gemini vision / chat response"]
+    G --> S["Nutrition summary shown in app"]
+    S --> W{"User requests WhatsApp delivery?"}
+    W -->|"Yes"| T["Twilio WhatsApp message"]
+    W -->|"No"| R["Continue chat"]
+```
+
+**Important:** Nutrition values generated from a photo or chat are estimates and may be incomplete or inaccurate. They are not medical advice and should not be used as a substitute for professional dietary guidance.
+
+---
 ## 📁 Project Structure
 
 ```
