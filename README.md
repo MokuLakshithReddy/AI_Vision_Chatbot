@@ -1,5 +1,8 @@
 # 🥗 MacroSnap — AI Nutrition Buddy
 
+[![Stars](https://img.shields.io/github/stars/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square)](https://github.com/MokuLakshithReddy/AI_Vision_Chatbot/stargazers) [![Forks](https://img.shields.io/github/forks/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square)](https://github.com/MokuLakshithReddy/AI_Vision_Chatbot/forks) [![Open Issues](https://img.shields.io/github/issues/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square)](https://github.com/MokuLakshithReddy/AI_Vision_Chatbot/issues) [![Last Commit](https://img.shields.io/github/last-commit/MokuLakshithReddy/AI_Vision_Chatbot?style=flat-square)](https://github.com/MokuLakshithReddy/AI_Vision_Chatbot/commits/main)
+
+
 MacroSnap is an AI nutrition buddy built with **Streamlit**, **Google Gemini (Vision & Chat)**, and **Twilio (WhatsApp)**.
 
 Users enter their name and WhatsApp number once, then chat with MacroSnap by typing a question or uploading a meal photo to get an instant calorie & macro breakdown. With a single click, a complete daily nutrition summary is sent straight to their WhatsApp!
